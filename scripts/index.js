@@ -7,7 +7,7 @@ const selectBtns = document.getElementsByClassName('select-btn')
 for(let btn of selectBtns){
     btn.addEventListener("click", function(e){
        const playerName = e.target.value  //palyers name 
-       e.target.setAttribute('disabled', true) // adding disabled attribute
+      
        const ol = document.getElementById('ol')
       if(ol.childElementCount > 4){   // validation 
         alert("You Already Added 5 Players In The List")
@@ -17,6 +17,7 @@ for(let btn of selectBtns){
         li.innerText = playerName;
         
         ol.appendChild(li)
+        e.target.setAttribute('disabled', true) // adding disabled attribute
       }
        
     })
