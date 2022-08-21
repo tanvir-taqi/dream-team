@@ -7,6 +7,7 @@ const input = document.getElementById(inputID)
 const inputValue = parseInt(input.value)
 if(isNaN(inputValue)){
     input.value = ''
+    alert("please Insert A Value")
     return getValue();
 }
 else{

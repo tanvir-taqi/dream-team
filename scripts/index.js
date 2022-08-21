@@ -10,7 +10,7 @@ for(let btn of selectBtns){
        e.target.setAttribute('disabled', true) // adding disabled attribute
        const ol = document.getElementById('ol')
       if(ol.childElementCount > 4){   // validation 
-        console.log(ol.childElementCount);
+        alert("You Already Added 5 Players In The List")
         return;
       }else{
         const li = document.createElement('li')
