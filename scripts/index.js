@@ -13,7 +13,7 @@ for(let btn of selectBtns){
         alert("You Already Added 5 Players In The List")
         return;
       }else{
-        const li = document.createElement('li')
+        const li = document.createElement('li')  // creating list element
         li.innerText = playerName;
         
         ol.appendChild(li)
@@ -26,25 +26,25 @@ for(let btn of selectBtns){
 
 // ###### calculating  player expenses ############
 document.getElementById('player-total-btn').addEventListener('click', function(){
-    const playerPrice = getValue('player-price-input')
-    const ol = document.getElementById('ol')
-    const olLength = ol.childElementCount
+    const playerPrice = getValue('player-price-input'); //getting price input
+    const ol = document.getElementById('ol'); 
+    const olLength = ol.childElementCount;
     
-    playerPriceTotal = playerPrice * olLength;
+    playerPriceTotal = playerPrice * olLength; //player total expenses
     let playerPriceOutput;
-    playerPriceOutput = setInnerText('player-expense-output', playerPriceTotal)
+    playerPriceOutput = setInnerText('player-expense-output', playerPriceTotal);
 })
 
 
 // ########### calculating total cost ########## 
 
 document.getElementById('total-cost-btn').addEventListener('click', function(){
-    const managerCost = getValue('manager-cost');
+    const managerCost = getValue('manager-cost'); 
     const coachCost = getValue('coach-cost');
     const playerCostELement = document.getElementById('player-expense-output');
-    const playerCost = parseInt(playerCostELement.innerText);
-    const totalCost = managerCost + coachCost + playerCost;
+    const playerCost = parseInt(playerCostELement.innerText);  // total player cost in integer
+    const totalCost = managerCost + coachCost + playerCost; // total expenses
     let setTotalExpenses;
-    setTotalExpenses = setInnerText('total-expense-output', totalCost);
+    setTotalExpenses =   setInnerText('total-expense-output', totalCost);
 
 })
