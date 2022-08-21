@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+    background: #000000e8;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background:url(/images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    
+
+}
+@media screen and (max-width:768px) {
+  
+}
+.header-content{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 100px;
+   background: linear-gradient(to bottom, rgb(0, 0, 0) ,rgba(0, 0, 0, 0.007));
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+small {
+    letter-spacing: 1px ;
+    text-shadow: 1px 1px 1px black;
+}
+.now-text{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(11, 36, 146);
+    color: white;
+    transition: all 0.4s ease-out;
+    font-weight: 700;
+    
+}
+.now-text:hover{
+    text-decoration: none;
+    color: rgb(11, 36, 146);
+    
+}
+header p {
+    font-size: 1.5rem;
+}
+.style-btn{
+    background: rgb(11, 36, 146);
+    border: 2px solid rgb(11, 36, 146);
+    color: white;
+    padding: 4px 20px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+
+}
+.style-btn:hover{
+    color: white;
+    background: linear-gradient(to right , rgb(3, 4, 10), rgba(0, 0, 0, 0.123));
+    border: 2px solid rgb(11, 36, 146);
+
+}
+.style-btn:focus{
+    color:rgb(11, 36, 146);
+    background: white;
+    
+}
+
+
+.selected-five{
+    background: rgba(0, 0, 0, 0.575);
+    color: white ;
+   padding: 60px 10px 100px 10px;
+    border-radius: 20px;
+    
+}
+.selected-five h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.selected-five ol li {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.budget{
+    background: rgba(0, 0, 0, 0.575);
+    border-radius: 20px;
+    color: white;
+}
+
+.player-budget, .player-expense, .manager-budget, .coach-budget, .total-expense{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.4px;
+}
+input{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+    outline: none;
+    border-radius:5px ;
+}
+.calculate-btn{
+  
+    width: 100%;
+}
